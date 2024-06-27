@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color:rgb(234, 212, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background: linear-gradient(140deg,#00feba,rgb(107, 83, 146));
+    
+   width: 100%;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    
+}
+
+.search{
+   
+    display: flex;
+    height: 10vmin;
+    width: 100%;
+    
+    align-items: center;
+    gap:1rem;
+}
+
+.search input{
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5vmin;
+    height: 8vmin;
+    border-radius: 3rem;
+  padding: 0 0 0 30px;
+    border: none;
+    outline: 0;
+    background-color: aliceblue;
+    color:gray;
+}
+
+.search button{
+    border:0;
+    outline: 0;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button img{
+    height: 30px;
+    cursor: pointer;
+}
+
+.wether-icon{
+        width: 170px;
+        margin-top: 10px;
+        
+}
+
+.wether h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.wether h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col{
+    display: flex;
+    gap :1rem;
+    margin-top: 5rem;
+}
+
+.col img{
+    width: 60px;
+}
+
+.humidity , .wind{
+    font-size: 25px;
+}
+
+.weather-info{
+    font-size: 5vmin;
+    margin-top: 1rem;
+}
+
+.error{
+    text-align: left;
+    margin-left: 20px;
+    color: rgb(194, 94, 94);
+    font-size: 15px;
+    display: none;
+}
+
+.zoom-div{
+    transition: transform 0.2s;
+}
+.zoom-div:hover{
+      transform: scale(1.2);
+}
+
+@media only screen and (max-width: 700px) {
+    main{
+       display: flex;
+       justify-content: space-around;
+       align-items: center ;
+       
+    }
+
+    body{
+        padding: 10px;
+    }
+
+    .search input{
+        height: 3rem;
+        font-size: 4vmin;
+        margin: 0;
+    }
+    
+    .col img{
+        height: 10vmin;
+        width: 10vmin;  
+    }
+    .details{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10vmin;
+    }
+   
+    .error{
+        margin: 10px;
+    }
+
+    .weather-info{
+        margin-top: 2rem;
+    }
+}
